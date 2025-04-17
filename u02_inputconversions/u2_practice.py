@@ -35,8 +35,8 @@ print("Perimeter: {}, Area: {}".format(perimeter, area))
 # Input: Celsius = 25
 # Output: "25°C is equal to 77°F."
 
-"""
+
 cel = int(input("Enter the temperature: "))
-fah = (cel * 9/5) + 32
+fah = int((cel * 9/5) + 32)
 print("{}°C is equal to {}°F.".format(cel, fah))
-"""
+
