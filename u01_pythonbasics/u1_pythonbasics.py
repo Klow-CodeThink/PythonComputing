@@ -1,5 +1,5 @@
 
-###################################################
+############################################################
 # Part 1: Learning Exercises
 
 # Exercise 1: Variables and Assignments
@@ -9,8 +9,6 @@ a = 10
 b = 20
 sum_value = a + b
 print("Sum of a and b is:", sum_value)
-
-
 
 
 #------------------------------------------------------------
@@ -25,8 +23,6 @@ It explains the code in detail.
 print("Comments explain your code.")
 
 
-
-
 #------------------------------------------------------------
 # Exercise 3: String Concatenation
 # Combine two strings to make a greeting.
@@ -38,16 +34,12 @@ message = greeting + " " + name
 print(message)
 
 
-
-
 #------------------------------------------------------------
 # Exercise 4: String Repetition
 # Repeat a phrase multiple times to create a pattern.
 # Example: Print the phrase "Python is fun! " three times.
 phrase = "Python is fun! "
 print(phrase * 3)
-
-
 
 
 #------------------------------------------------------------
@@ -61,4 +53,5 @@ adjective = "awesome"
 print("Learning " + language + " is " + adjective + "!")
 
 
+############################################################
 

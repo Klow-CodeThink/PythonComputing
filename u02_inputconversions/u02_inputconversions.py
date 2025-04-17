@@ -1,29 +1,3 @@
-# Part 2. IN-CLASS Practice Exercises
-
-# Exercise 6: Greeting with .format()
-# Write a program to ask the user for their name and print a greeting
-# using .format(). Example:
-# Input: name = "Alice"
-# Output: "Hello, Alice! Have a great day!"
-
-name = input("Enter your name: ")
-sentence = f"Hello, {name}! Have a great day!"
-print(sentence)
-
-
-
-
-
-
-colour = input("What is your favourite colour? ")
-sentence = "Your favourite colour is " + colour + "."
-print(sentence)
-
-
-
-
-
-
 
 ############################################################
 # Part 1: Learning Exercises 
@@ -37,8 +11,6 @@ color = input("What is your favorite color? ")
 print("Your favorite color is " + color + ".")
 
 
-
-
 #------------------------------------------------------------
 # Exercise 2: Understanding input() Behavior
 # Write a program to ask the user for their age and display it.
@@ -46,8 +18,6 @@ print("Your favorite color is " + color + ".")
 # Note: Treat the input as a string for now.
 age = input("Enter your age: ")
 print("Your age is " + age + ".")
-
-
 
 
 #------------------------------------------------------------
@@ -67,8 +37,6 @@ print("Using .format(): {} is {} years old.".format(name, age))
 print(f"Using f-strings: {name} is {age} years old.")
 
 
-
-
 #------------------------------------------------------------
 # Exercise 4: Formatting a Message with .format()
 # Write a program to display a sentence about favorite subjects.
@@ -76,7 +44,6 @@ print(f"Using f-strings: {name} is {age} years old.")
 subject = input("Enter your favorite subject: ")
 reason = input("Why do you like it? ")
 print("I like {} because it is {}.".format(subject, reason))
-
 
 
 
@@ -96,4 +63,4 @@ print("Using .format(): The sum of {} and {} is {}.".format(num1, num2, result))
 # Using f-strings
 print(f"Using f-strings: The sum of {num1} and {num2} is {result}.")
 
-##########################################
+############################################################

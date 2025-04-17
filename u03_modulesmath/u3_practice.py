@@ -61,7 +61,7 @@ print(f"{full_containers} full containers are needed to ship the items and there
 
 h = int(20)
 g = int(9.8)
-t = sqrt(2*h/g)
+t = math.sqrt(2*h/g)
 print(f"It takes {t}s for the object to fall {h}m.")
 
 
