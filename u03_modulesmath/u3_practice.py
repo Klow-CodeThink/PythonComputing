@@ -59,10 +59,12 @@ print(f"{full_containers} full containers are needed to ship the items and there
 # g = 9.8 m/s^2
 # Output: 2.02 s.
 
-h = int(20)
-g = int(9.8)
+"""
+import math
+h = 20
+g = 9.8
 t = math.sqrt(2*h/g)
 print(f"It takes {t}s for the object to fall {h}m.")
-
+"""
 
 
