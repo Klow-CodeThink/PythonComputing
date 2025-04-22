@@ -1,5 +1,6 @@
 #####################################################
 # Part 1: Learning Exercises
+
 # Exercise 1: Simple Loop with range(stop)
 # Write a program to print "Welcome to Python!" 5 times.
 # Use range(stop) to repeat the message.

@@ -1,5 +1,6 @@
 ###################################################
 # Part 1: Learning Exercises
+
 # Exercise 1: Accessing List Elements by Index
 # Write a program to access and print the first, second, and last 
 # elements of a list using indexing.
