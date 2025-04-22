@@ -68,8 +68,10 @@ if marks >= 90:
     print(f"Grade A.")
 elif marks >= 75:
     print(f"Grade B.")
-elif marks < 60:
+elif marks >= 60:
     print(f"Grade C.")
+else:
+    print(f"Grade D.")
 """
 
 #------------------------------------------------------------
