@@ -7,6 +7,18 @@
 # Input = 1234
 # Output = 10
 
+"""
+num = int(input("Enter a number: "))        # Input number
+
+total = 0                   # Initialize total sum
+
+while num > 0:              # Use while loop to extract and sum each digit
+    digit = num % 10        # Get the last digit
+    total += digit          # Add the digit to the total (total = total + digit)
+    num = num // 10         # Remove the last digit
+
+print("The sum of the digits is:", total)   # Print the result
+"""
 
 #------------------------------------------------------------
 # Exercise 2

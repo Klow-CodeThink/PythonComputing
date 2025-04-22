@@ -77,7 +77,6 @@ while True:
 
 
 
-
 #------------------------------------------------------------
 # Exercise 12: Custom Pattern
 # Write a program to print the following pattern:
@@ -87,7 +86,17 @@ while True:
 # ****
 # *****
 
+"""
+i = 1               # Initialize counter
+while i <= 5:       # Loop until i is greater than 5
+    print("*" * i)  # Print i number of asterisks
+    i += 1          # Increment i by 1 or i = i + 1
+"""
 
-
+"""
+for i in range(1,6):    # using for loop
+    print("*" * i)
+    i = i + 1
+"""
 
 ###########################################################
