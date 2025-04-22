@@ -1,6 +1,7 @@
 ###########################################################
 # Part 3: Challenge Exercises
 
+# Exercise 1
 # Scenario: A user accidentally adds duplicate items to their
 # shopping list. Write a program to remove duplicate items.
 # Your program is a shopping list program.

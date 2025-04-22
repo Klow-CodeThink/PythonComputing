@@ -1,6 +1,7 @@
 ###########################################################
 # Part 3: Challenge Exercises
 
+# Exercise 1
 # Write a program to calculate the sum of digits of a given
 # number using a while loop. 
 # Example:
