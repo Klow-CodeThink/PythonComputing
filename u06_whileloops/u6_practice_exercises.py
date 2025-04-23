@@ -1,5 +1,6 @@
 ###########################################################
 # Part 2: IN-CLASS Practice Exercises
+
 # Exercise 7: Multiplication Table with While Loop
 # Write a program to print the multiplication table of 7 up to 10.
 # Example: 7 x 1 = 7, ..., 7 x 10 = 70.

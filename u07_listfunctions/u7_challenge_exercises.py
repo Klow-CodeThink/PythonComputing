@@ -3,24 +3,23 @@
 
 # Exercise 1
 # Scenario:  Your program is a shopping list program.
-
 # 1. Program will keep asking user to input a shopping list 
     # again and again until user indicates otherwise (e.g. stop)
-
 # 2. Enhance your program to check if the item already exists in list
     # if already exists, display a message to say it already exists
     # if not exist, then add the item to the list
 
-shoplist = []   # initialise shopping list at the start
+"""
+shoplist = []                                       # initialise shopping list at the start
 
 print("Welcome to K Store.")
 
 # start the main loop
 
 while True:
-    item = input("\nWhat do you want to buy? ")   # ask user
+    item = input("\nWhat do you want to buy? ")     # ask user
 
-    if item.lower() == "stop":                    # end program
+    if item.lower() == "stop":                      # end program
         print("\nDone with shopping list.")
         break
     else:
@@ -32,24 +31,10 @@ while True:
 # print out shopping list
 print("\nThese items are in your shopping list: ")
 
-for i in range(len(shoplist)):
-    print(f"{i+1}. {shoplist[i]}")
-
-
-
-# for i in shoplist:
-#     print(i)
-
-
-
-
-
+for i in range(len(shoplist)):                      # (alternative) for i in shoplist:
+    print(f"{i+1}. {shoplist[i]}")                  # (alternative) print(i)
 """
-fruits = ["apple", "banana", "apple", "orange"]
-del(fruits[2])
-print(fruits)
-"""
-
+ 
 #------------------------------------------------------------
 # Exercise 2
 # Scenario: 

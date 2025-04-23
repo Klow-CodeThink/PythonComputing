@@ -23,11 +23,21 @@ print(f"Common items: {common}")    # Print the common items
 # Exercise 2
 # Scenario: Ranking scores to determine the runner-up.
 # Find the second and third place winners in this list.
- 
-scores = [90, 85, 92, 88, 76, 95, 89, 70]
+#  scores = [90, 85, 92, 88, 76, 95, 89, 70]
 
+"""
+scores = [90, 85, 92, 88, 76, 95, 89, 70]       # Given scores
 
+unique_scores = list(set(scores))               # Remove duplicates to avoid repeated rankings
 
+unique_scores.sort(reverse=True)                # Sort the scores in descending order
+
+second_place = unique_scores[1]                 # Get second and third place scores
+third_place = unique_scores[2]
+
+print(f"Second place score: {second_place}")    # Display the results
+print(f"Third place score: {third_place}")
+"""
 
 #------------------------------------------------------------
 # Exercise 3
