@@ -12,16 +12,28 @@
 # Output: "Valid password"
 
 # Input: "password"
-# Output: "Invalid password: missing uppercase letter and digit"
+# Output: "Invalid password"
 
-# Input: "PASSWORD123"
-# Output: "Invalid password: missing lowercase letter"
+"""
+password = input("Enter the password: ")
 
+has_upper = False
+has_lower = False
+has_digit = False
 
+for pw in password:
+    if pw.isupper():
+        has_upper = True
+    elif pw.islower():
+        has_lower = True
+    elif pw.isdigit():
+        has_digit = True
 
-
-
-
+if len(password) >= 8 and has_upper and has_lower and has_digit:
+    print("Valid password")
+else:
+    print("Invalid password")
+"""
 
 #------------------------------------------------------------
 # Exercise 2
@@ -37,11 +49,14 @@
 # Input: "Hello world"
 # Output: "Invalid sentence: does not end with a period"
 
+"""
+sentence = input("Enter a sentence: ")
 
-
-
-
-
+if sentence[0].isupper and sentence.endswith("."):
+    print("Valid sentence")
+else:
+    print("Invalid sentence")
+"""
 
 #------------------------------------------------------------
 # Exercise 3
@@ -57,10 +72,16 @@
 # Input: "Hello, World! Python Is Amazing."
 # Output: "Number of uppercase letters: 4"
 
+"""
+count = 0
 
+para = input("Enter a paragraph: ")
 
+for letter in para:
+    if letter.isupper():
+        count = count + 1
 
-
-
+print(f"Number of uppercase letters: {count}")
+"""
 
 ###########################################################
