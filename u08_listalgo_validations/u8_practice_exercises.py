@@ -40,7 +40,9 @@ print(count)
 # Write a program to remove duplicate values from a list.
 # Example: Input = [1, 2, 2, 3, 4, 4], Output = [1, 2, 3, 4].
 
-
+listnums =  [1, 2, 2, 3, 4, 4]
+newnums = list(set(listnums)) 
+print(newnums)
 
 
 

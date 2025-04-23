@@ -2,15 +2,47 @@
 # Part 3: Challenge Exercises
 
 # Exercise 1
-# Scenario: A user accidentally adds duplicate items to their
-# shopping list. Write a program to remove duplicate items.
-# Your program is a shopping list program.
-# 1. Program will keep asking user to input a shopping list again and again until user indicates otherwise.
-# 2. Code a user menu to add, view, or delete items from a menu
-# 3. Code the delete function, you need to validate that the item is in the menu before deletion.
-# Example:
-# Input = ["apple", "banana", "apple", "orange"],
-# Output = ["apple", "banana", "orange"].
+# Scenario:  Your program is a shopping list program.
+
+# 1. Program will keep asking user to input a shopping list 
+    # again and again until user indicates otherwise (e.g. stop)
+
+# 2. Enhance your program to check if the item already exists in list
+    # if already exists, display a message to say it already exists
+    # if not exist, then add the item to the list
+
+shoplist = []   # initialise shopping list at the start
+
+print("Welcome to K Store.")
+
+# start the main loop
+
+while True:
+    item = input("\nWhat do you want to buy? ")   # ask user
+
+    if item.lower() == "stop":                    # end program
+        print("\nDone with shopping list.")
+        break
+    else:
+        if item not in shoplist:
+            shoplist.append(item)
+        else:
+            print(f"\n{item} is already in the shopping list.")
+
+# print out shopping list
+print("\nThese items are in your shopping list: ")
+
+for i in range(len(shoplist)):
+    print(f"{i+1}. {shoplist[i]}")
+
+
+
+# for i in shoplist:
+#     print(i)
+
+
+
+
 
 """
 fruits = ["apple", "banana", "apple", "orange"]
@@ -44,6 +76,7 @@ print(passage_1)
 # Example: 
 # Input = [87, 95, 76, 88, 95]
 # Output = 88.
+
 
 
 
