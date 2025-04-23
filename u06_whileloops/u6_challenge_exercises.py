@@ -18,7 +18,7 @@ while num > 0:              # Use while loop to extract and sum each digit
     total += digit          # Add the digit to the total (total = total + digit)
     num = num // 10         # Remove the last digit
 
-print("The sum of the digits is:", total)   # Print the result
+print("The sum of the digits is: {total}.")   # Print the result
 """
 
 #------------------------------------------------------------

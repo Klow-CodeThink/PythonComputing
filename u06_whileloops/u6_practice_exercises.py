@@ -7,9 +7,9 @@
 """
 i = 1
 num = 7
-while if i <= 10:
-        print(f"{num} x {i} = {num * i}")
-        i = i + 1
+while i <= 10:
+    print(f"{num} x {i} = {num * i}")
+    i = i + 1
 """
 
 #------------------------------------------------------------
@@ -21,8 +21,8 @@ while if i <= 10:
 i = 2
 sum = 0
 while i <= 20:
-        sum = sum + i
-        i = i + 2
+    sum = sum + i
+    i = i + 2
 
 print(f"The sum is {sum}.")
 """
