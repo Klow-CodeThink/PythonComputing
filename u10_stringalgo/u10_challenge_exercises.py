@@ -21,11 +21,17 @@
 # sentence2 = "Completely different sentence."
 # Output: []
 
+"""
+sentence1 = input("Enter the first sentence: ")
+sentence2 = input("Enter the second sentence: ")
 
+words1 = set(sentence1.lower().split())
+words2 = set(sentence2.lower().split())
 
+common_words = words1 & words2      # common_words = words1.intersection(words2)
 
-
-
+print(f"The common words are {common_words}.")
+"""
 
 #------------------------------------------------------------
 # Exercise 2
