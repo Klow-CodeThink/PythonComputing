@@ -49,14 +49,30 @@ else:
 # Input: "Hello world"
 # Output: "Invalid sentence: does not end with a period"
 
-"""
+
 sentence = input("Enter a sentence: ")
 
-if sentence[0].isupper and sentence.endswith("."):
+has_cap = False
+has_stop = False
+
+for c in sentence:
+    if c.isupper():
+        has_cap = True
+    elif c.endswith("."):
+        has_stop = True
+
+if not has_cap:
+    print("Invalid sentence: does not start with a capital letter")
+
+if not has_stop:
+    print("Invalid sentence: does not end with a full stop")
+
+if has_cap and has_stop:
     print("Valid sentence")
-else:
-    print("Invalid sentence")
-"""
+
+# else:
+#     print("Invalid sentence")
+
 
 #------------------------------------------------------------
 # Exercise 3
