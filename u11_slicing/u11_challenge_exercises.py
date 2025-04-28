@@ -20,7 +20,7 @@ name_parts = full_name.split()                      # .split separates the name 
 ini_ext = ""                                        # create an empty variable to put the initials
 
 for part in name_parts:                             # loop through each part and take the first letter
-    ini_ext = ini_ext + part[0] + "."
+    ini_ext += part[0].upper() + "."                # ini_ext = ini_ext + part[0].upper() + "."       
 
 print(f"The initials for {full_name} is {ini_ext}.")
 """
@@ -82,7 +82,7 @@ for word in words:
     revword_list.append(revword)                        # Add reversed word to list
 
 
-encryp_sentence = " ".join(revword_list)                # Join reversed words back into a sentence
+encryp_sentence = " ".join(revword_list)                # Join reversed words back into a sentence with spaces
 
 print(encryp_sentence)
 """
