@@ -47,7 +47,7 @@ print(students)
 #------------------------------------------------------------
 # In-Class Exercise 2: Inventory Stock Management
 # Scenario: A warehouse manager needs to manage product stock levels.
-
+"""
 # Task 1: Add a new product "Pineapples" with an initial stock of 40.
 
 inventory = {"Apples": 50, "Bananas": 30, "Oranges": 20, "Grapes": 60}
@@ -82,7 +82,7 @@ for item in to_remove:                  # *
         del(inventory[item])            # remove items
 
 print(f"Updated Inventory: {inventory}")
-
+"""
 
 #------------------------------------------------------------
 # In-Class Exercise 3: Library Book Management
@@ -116,30 +116,45 @@ books = {
 #------------------------------------------------------------
 # In-Class Exercise 4: Customer Orders Tracking
 # Scenario: A store tracks orders with customers and the items they purchased.
+"""
+# Task 1: Add a new order for "Mark" who purchased "Apples" and "Oranges".
+
 orders = {
     "John": ["Apples", "Bananas"],
     "Mary": ["Oranges", "Grapes"],
     "Alice": ["Bananas", "Pineapples"],
 }
 
-# Task 1: Add a new order for "Mark" who purchased "Apples" and "Oranges".
 
+orders["Mark"] = ["Apples", "Oranges"]      # "Apples" and "Oranges" --> "Oranges" only
 
-
+print(orders)
 
 
 #------------------------------------------------------------
 # Task 2: Count and print the total number of unique items purchased by all customers.
 
+unique_items = set()
 
+for items in orders.values():
+    for e_item in items:
+        unique_items.add(e_item)
+
+print(f"The total number of unique items is {len(unique_items)}.")
 
 
 
 #------------------------------------------------------------
 # Task 3: Identify customers who purchased "Bananas".
 
+cust_buy_bana = []
 
+for customer, items in orders.items():
+    if "Bananas" in items:
+        cust_buy_bana.append(customer)
 
+print(f"Customers who purchased bananas: {cust_buy_bana}")
+"""
 
 
 ###########################################################
