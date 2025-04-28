@@ -87,6 +87,8 @@ print(f"Updated Inventory: {inventory}")
 #------------------------------------------------------------
 # In-Class Exercise 3: Library Book Management
 # Scenario: A librarian tracks the availability of books in a dictionary.
+
+"""
 books = {
     "1984": {"status": "Available", "copies": 5},
     "Brave New World": {"status": "Checked Out", "copies": 0},
@@ -95,23 +97,26 @@ books = {
 
 # Task 1: Add a new book "To Kill a Mockingbird" with 3 copies.
 
+books["To Kill a Mockingbird"] = {"status": "Available", "copies": 3}
 
-
+print(books)
 
 
 #------------------------------------------------------------
 # Task 2: Update the status of "1984" to "Checked Out" if all copies are borrowed.
 
-
-
+if books["1984"]["copies"] == 0:
+    books["1984"]["status"] == "Checked Out"
 
 
 #------------------------------------------------------------
 # Task 3: Print all books currently available along with their copy count.
 
-
-
-
+print("\nAvailable books:")
+for book, details in books.items():
+    if details["status"] == "Available":
+        print(f"{book}: {details['copies']} copies available")
+"""
 
 #------------------------------------------------------------
 # In-Class Exercise 4: Customer Orders Tracking
