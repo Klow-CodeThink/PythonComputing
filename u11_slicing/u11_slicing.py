@@ -1,3 +1,18 @@
+word = "MADAM"
+# To check if palindrome
+# reverse the word and check if they are equal
+
+revword = word[::-1]
+print(revword)
+
+if word == revword:
+    print(f"{word} is a palindrome")
+else:
+    print(f"{word} is not a palindrome")
+
+
+
+
 ###################################################
 # Part 1: Learning Exercises
 

@@ -44,7 +44,8 @@ else:
 # Output: "Valid sentence"
 
 # Input: "the quick brown fox jumps over the lazy dog"
-# Output: "Invalid sentence: does not start with a capital letter and does not end with a period"
+# Output: "Invalid sentence: does not start with a capital letter 
+#           Invalid sentence: does not end with a period"
 
 # Input: "Hello world"
 # Output: "Invalid sentence: does not end with a period"

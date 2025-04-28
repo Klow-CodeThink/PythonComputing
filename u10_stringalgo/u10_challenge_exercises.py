@@ -66,9 +66,18 @@ print(f"The common words are {common_words}.")
 # Input: "Hello world."
 # Output: "world Hello"
 
+sentence = "Python is fun to learn"
 
+# split into a list
+slist = sentence.split(" ")
+print(slist)
 
+revsen = "" # empty string
 
+for word in slist:
+    revsen = word + " " + revsen
+
+print(revsen)
 
 
 

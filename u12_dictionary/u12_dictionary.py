@@ -1,60 +1,131 @@
+# data storage: string, integer, float, boolean, list, dictionary
+
+food_list = ["hamburger", "pasta", "pizza", "fries", "nuggets"]
+
+price_list = [2, 3, 4, 5, 6]
+
+# key / value (two columns)
+# keys must be unique, keys must be a string or integer
+# value can be any variable type
+
+menu = {"hamburger":2, "pasta":3, "pizza":4, "fries":5, "nuggest":6} #dictionary
+
+
+
 ###################################################
 # Part 1: Learning Exercises
 
+
 # Practice Exercise 1: Creating a Dictionary
 # Create a dictionary to store student names and their grades.
+students = {"Alice": 85, "Bob": 90, "Charlie": 78} # answer
 
-students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-print("Student Grades: {}".format(students))
+
+
+
 
 #------------------------------------------------------------
 # Practice Exercise 2: Accessing Dictionary Values
 # Access Bob's grade from the dictionary.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-bob_grade = students["Bob"]  # Access using the key
-print("Bob's grade is: {}".format(bob_grade))
+
+bobgrade = students["Bob"] # pull out a value using the key
+print(bobgrade)
+
+
+
+
 
 #------------------------------------------------------------
 # Practice Exercise 3: Adding New Key-Value Pairs
 # Add a new student, Diana, with a grade of 92 to the dictionary.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-students["Diana"] = 92  # Add new key-value pair
-print("Updated Student Grades: {}".format(students))
+
+students["Diane"] = 92 # add a new key / value to the end of the dictionary
+print(students)
+
+
+
 
 #------------------------------------------------------------
 # Practice Exercise 4: Updating Existing Values
 # Update Charlie's grade to 80 in the dictionary.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-students["Charlie"] = 80  # Update value
-print("Updated Student Grades: {}".format(students))
+
+students["Charlie"] = 80
+print(students)
+
+# if the key does not exist, then it will add
+# if the key already exists, it will update
 
 #------------------------------------------------------------
 # Practice Exercise 5: Deleting Key-Value Pairs
 # Remove Alice's entry from the dictionary.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-del students["Alice"]  # Delete key-value pair
-print("Updated Student Grades: {}".format(students))
+
+del(students["Alice"])
+print(students)
+
+
+
 
 #------------------------------------------------------------
 # Practice Exercise 6: Checking for Existence of a Key
 # Check if 'Diana' is in the student dictionary.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-if "Diana" in students:
-    print("Diana is in the dictionary.")
+
+stu = "Diana"
+
+if stu in students:
+    print(f"{stu} is in the class.")
 else:
-    print("Diana is not in the dictionary.")
+    print(f"{stu} is not in the class.")
+
+
+
+          
+
+
+
 
 #------------------------------------------------------------
 # Practice Exercise 7: Iterating Through a Dictionary
 # Print all student names and their grades.
-
 students = {"Alice": 85, "Bob": 90, "Charlie": 78}
-for name, grade in students.items():  # Iterate through dictionary
-    print("{}: {}".format(name, grade))
 
-###################################################
+"""
+# to read the values only
+
+for stu, score in students.items(): #.items() pulls out both key and value
+    print(f"{stu} scored {score}.")
+"""
+    
+# or
+
+# to be able to amend the value
+
+for stu in students: # stu is the key
+    # print(stu) # key
+    # print(students[stu]) # value from the dictionary using the key
+
+    # print(f"{stu} scored {students[stu]}.")
+    students[stu] = students[stu] - 10
+
+print(students)
+
+
+
+
+
+#------------------------------------------------------------
+
+student = {"John":"Student",
+            "Details":{"Age":14,
+                        "Gender":"Male",
+                        "Level":"Sec 3",
+                        "Subject Combi": ["Science", "A Math", "E Math"]
+                        }}
+
+# JSON - JAVASCRIPT OBJECT NOTATION
+
+# Object Oriented Programming

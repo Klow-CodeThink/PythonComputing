@@ -7,7 +7,9 @@
 numbers = [10, 20, 30, 40, 50, 60, 70]
 
 
+midindex = len(numbers) // 2 # floor divide 2 # gives the centre index
 
+print(numbers[midindex - 1 : midindex + 2])
 
 
 
@@ -16,12 +18,12 @@ numbers = [10, 20, 30, 40, 50, 60, 70]
 # Exercise 8: Checking Palindrome in a String
 # Scenario: Determine if a string is a palindrome (reads the same 
 # backward as forward).
-word = input("Enter a word: ")
+word = input("Enter a word: ").lower()
 
-
-
-
-
+if word == word[::-1]:
+    print("The word is a palindrom.")
+else:
+    print("The word is not a palindrom.")
 
 
 #------------------------------------------------------------
