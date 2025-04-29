@@ -4,9 +4,10 @@
 # Exercise 7: Greeting Multiple Users
 # Write a function that takes a list of names and greets each one.
 
-
 # Call the function with a list of names.
 # greet_users(["Alice", "Bob", "Charlie"])
+
+
 
 
 
@@ -16,7 +17,6 @@
 # Exercise 8: Simple Calculator
 # Write a function that takes two numbers and an operator (+, -, *, /)
 # and returns the result of the calculation.
-
 
 # Test the function with multiple operations.
 # print(calculator(10, 5, "+"))
@@ -28,10 +28,11 @@
 
 
 
+
+
 #------------------------------------------------------------
 # Exercise 9: Palindrome Checker
 # Write a function that checks if a string is a palindrome.
-
 
 # Test the function with different words.
 # print("Is 'radar' a palindrome? {}".format(is_palindrome("radar")))
@@ -49,6 +50,7 @@
 
 # Call the function with a number.
 # multiplication_table(5)
+
 
 
 
