@@ -50,6 +50,7 @@ print(students)
 """
 # Task 1: Add a new product "Pineapples" with an initial stock of 40.
 
+
 inventory = {"Apples": 50, "Bananas": 30, "Oranges": 20, "Grapes": 60}
 
 inventory["Pineapple"] = 40
@@ -71,6 +72,7 @@ print(f"The total stock of all items combined is {tot_stock}.")
 
 #------------------------------------------------------------
 # Task 3: Identify and remove any product with stock below 25.
+
 
 to_remove = []                          # create a list to store items to remove*
 
@@ -97,6 +99,7 @@ books = {
 
 # Task 1: Add a new book "To Kill a Mockingbird" with 3 copies.
 
+
 books["To Kill a Mockingbird"] = {"status": "Available", "copies": 3}
 
 print(books)
@@ -105,12 +108,14 @@ print(books)
 #------------------------------------------------------------
 # Task 2: Update the status of "1984" to "Checked Out" if all copies are borrowed.
 
+
 if books["1984"]["copies"] == 0:
     books["1984"]["status"] == "Checked Out"
 
 
 #------------------------------------------------------------
 # Task 3: Print all books currently available along with their copy count.
+
 
 print("\nAvailable books:")
 for book, details in books.items():
@@ -123,6 +128,7 @@ for book, details in books.items():
 # Scenario: A store tracks orders with customers and the items they purchased.
 """
 # Task 1: Add a new order for "Mark" who purchased "Apples" and "Oranges".
+
 
 orders = {
     "John": ["Apples", "Bananas"],
@@ -139,6 +145,7 @@ print(orders)
 #------------------------------------------------------------
 # Task 2: Count and print the total number of unique items purchased by all customers.
 
+
 unique_items = set()
 
 for items in orders.values():
@@ -151,6 +158,7 @@ print(f"The total number of unique items is {len(unique_items)}.")
 
 #------------------------------------------------------------
 # Task 3: Identify customers who purchased "Bananas".
+
 
 cust_buy_bana = []
 

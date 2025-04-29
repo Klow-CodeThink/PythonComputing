@@ -3,11 +3,12 @@
 
 # Challenge: Advanced Grade Analysis
 # Scenario: A teacher needs detailed analysis of class performance.
-students = {"Alice": 85, "Bob": 78, "Charlie": 92, "Diana": 88, "Eve": 76}
-
+"""
 # Task 1: Find and print the names of students who scored below the average grade.
 
-"""
+students = {"Alice": 85, "Bob": 78, "Charlie": 92, "Diana": 88, "Eve": 76}
+
+
 tot_score = 0
 
 for score in students.values():
@@ -26,12 +27,12 @@ for student, score in students.items():
         avg_grade_stu.append(student)
 
 print(f"Students who scored below the average grade: {avg_grade_stu}")
-"""
+
 
 # Task 2: Create a new dictionary with students categorized as "Pass" or "Fail".
 # Assume a passing grade is 80 or above. 
 
-"""
+
 Pass_Fail = {}
 
 for student, score in students.items():
