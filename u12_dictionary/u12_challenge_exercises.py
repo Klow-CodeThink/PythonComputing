@@ -146,26 +146,37 @@ for book, details in books.items():
 #------------------------------------------------------------
 # Exercise 4: Complex Order Tracking
 # Scenario: A store manager tracks customers, their orders, and the total bill.
+
+"""
+# Task 1: Add a new order for Mark with 2 Apples and 3 Oranges. Assume $3 per Apple and $4 per Orange.
+
 orders = {
     "John": {"items": {"Apples": 3, "Bananas": 2}, "total": 15},
     "Mary": {"items": {"Oranges": 1, "Grapes": 4}, "total": 20},
     "Alice": {"items": {"Bananas": 5, "Pineapples": 2}, "total": 25},
 }
 
-# Task 1: Add a new order for Mark with 2 Apples and 3 Oranges. Assume $3 per Apple and $4 per Orange.
 
+apple_price = 3
+orange_price = 4
+total = (2 * apple_price) + (3 * orange_price)
 
+orders["Mark"] = {"items": {"Apples": 2, "Oranges": 3}, "total": total}
 
-
-
+print(f"Updated Order Tracking: {orders}")
 
 
 # Task 2: Identify the customer with the highest total bill.
 
+high_tt_bill = 0
+cust_high_bill = ""
 
+for cust, details in orders.items():
+    if details["total"] > high_tt_bill:
+        high_tt_bill = details["total"]
+        cust_high_bill = cust
 
-
-
-
+print(f"\n{cust_high_bill}, with a total bill of ${high_tt_bill}, is the customer with the highest bill.")
+"""
 
 ###########################################################
