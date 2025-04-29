@@ -110,7 +110,7 @@ print(books)
 
 
 if books["1984"]["copies"] == 0:
-    books["1984"]["status"] = "Checked Out"     # check out with print == or =
+    books["1984"]["status"] = "Checked Out"
 
 
 #------------------------------------------------------------

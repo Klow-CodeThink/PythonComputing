@@ -62,48 +62,86 @@ print(f"Students who failed: {stu_fail}")
 #------------------------------------------------------------
 # Exercise 2: Inventory Reordering System
 # Scenario: A warehouse manager needs to identify items for reordering.
-inventory = {"Apples": 50, "Bananas": 10, "Oranges": 20, "Grapes": 5, "Pineapples": 40}
-
+"""
 # Task 1: Identify and print items with stock below 15 for reordering.
 
+inventory = {"Apples": 50, "Bananas": 10, "Oranges": 20, "Grapes": 5, "Pineapples": 40}
 
 
+for_reorder = []
 
+for item, stock in inventory.items():
+    if stock < 15:
+        for_reorder.append(item)
 
+print(f"Items with stock below 15 for reordering: {for_reorder}")
 
 
 # Task 2: Calculate and print the percentage of total stock for each item.
 
+total_stock = sum(inventory.values())
 
-
-
-
-
+for item, stock in inventory.items():
+    percent_item = (stock / total_stock) * 100
+    print(f"{item} : {percent_item:.0f}%")
+"""
 
 #------------------------------------------------------------
 # Exercise 3: Library System Enhancements
 # Scenario: A librarian wants to track book borrow history.
+"""
+# Task 1: Identify the book with the highest borrow count.
+
 books = {
     "1984": {"status": "Available", "copies": 5, "borrowed": 3},
     "Brave New World": {"status": "Checked Out", "copies": 0, "borrowed": 5},
     "Fahrenheit 451": {"status": "Available", "copies": 2, "borrowed": 1},
 }
 
-# Task 1: Identify the book with the highest borrow count.
 
+high_borrow_count = 0
+top_book = ""
 
+for book, details in books.items():
+    if details["borrowed"] > high_borrow_count:
+        high_borrow_count = details["borrowed"]
+        top_book = book
 
-
-
+print(f"The book with the highest count of {high_borrow_count} borrows is '{top_book}'.")
 
 
 # Task 2: Add a new book and simulate borrowing it twice.
 
+# add a new book + details
+books["To Kill a Mockingbird"] = {"status": "Available", "copies": 6, "borrowed": 0}
 
 
+while True:
+    choice = input(f"Which book would you like to borrow: ")
+    
+    if choice.lower() == "end":
+        break
 
+    if choice in books:
+        if books[choice]["copies"] > 0:
+            books[choice]["copies"] -= 1
+            books[choice]["borrowed"] +=1
+            print(f"Book successfully borrowed. Go to the counter to collect.")
+            
+            if books[choice]["copies"] == 0:
+                books[choice]["status"] = "Checked Out"
+                print(f"{choice} is now Checked Out.")
+        
+        else:
+            print(f"{choice} is not available. All copies have been checked out.")
+    
+    else:
+        print(f"{choice} is not available in this library.")
 
-
+print("\nUpdated Inventory")
+for book, details in books.items():
+    print(f"{book}: {details}")
+"""
 
 #------------------------------------------------------------
 # Exercise 4: Complex Order Tracking
