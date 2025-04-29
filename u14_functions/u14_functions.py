@@ -15,7 +15,7 @@ greet()
 # Define a function that takes a name as a parameter and greets the user.
 
 def greet_user(name):
-    print("Hello, {}!".format(name))
+    print(f"Hello, {name}!")
 
 # Call the function with your name.
 greet_user("Alice")
@@ -25,7 +25,7 @@ greet_user("Alice")
 # Define a function that takes two numbers and prints their sum.
 
 def add_numbers(num1, num2):
-    print("The sum of {} and {} is {}".format(num1, num2, num1 + num2))
+    print(f"The sum of {num1} and {num2} is {num1 + num2}.")
 
 # Call the function with two numbers.
 add_numbers(5, 10)
@@ -39,7 +39,7 @@ def calculate_area(length, width):
 
 # Call the function and store the result.
 area = calculate_area(5, 3)
-print("The area of the rectangle is {}".format(area))
+print(f"The area of the rectangle is {area} cm².")
 
 #------------------------------------------------------------
 # Exercise 5: Using Returned Values in Further Computations
@@ -54,22 +54,22 @@ length = 6
 width = 4
 area = calculate_area(length, width)
 perimeter = calculate_perimeter(length, width)
-print("For a rectangle of length {} and width {}:".format(length, width))
-print("Area: {}, Perimeter: {}".format(area, perimeter))
+print(f"For a rectangle of length {length} cm and width {width} cm:")
+print(f"Area: {area} cm², Perimeter: {perimeter} cm")
 
 #------------------------------------------------------------
 # Exercise 6: Demonstrating Local and Global Variables
 # Define a function that modifies a local variable.
 
 def local_variable_example():
-    x = 10  # Local variable
-    print("Inside the function, x is {}".format(x))
+    x = 10                                  # Local variable
+    print(f"Inside the function, x is {x}")
 
 
 # Outside the function.
-x = 20  # Global variable
+x = 20                                      # Global variable
 local_variable_example()
-print("Outside the function, x is {}".format(x))
+print(f"Outside the function, x is {x}")
 
 ###################################################
 
