@@ -7,20 +7,56 @@ students = {"Alice": 85, "Bob": 78, "Charlie": 92, "Diana": 88, "Eve": 76}
 
 # Task 1: Find and print the names of students who scored below the average grade.
 
+"""
+tot_score = 0
 
+for score in students.values():
+    tot_score = tot_score + score
 
+# print(tot_score)
 
+avg_grade = tot_score / len(students)
 
+print(f"The average grade is {avg_grade} marks.")
 
+avg_grade_stu = []
+
+for student, score in students.items():
+    if score < avg_grade:
+        avg_grade_stu.append(student)
+
+print(f"Students who scored below the average grade: {avg_grade_stu}")
+"""
 
 # Task 2: Create a new dictionary with students categorized as "Pass" or "Fail".
 # Assume a passing grade is 80 or above. 
 
+"""
+Pass_Fail = {}
+
+for student, score in students.items():
+    if score >= 80:
+        Pass_Fail[student] = "Pass"
+    else:
+        Pass_Fail[student] = "Fail"
 
 
+print(Pass_Fail)
 
+# or
 
+stu_pass = {}
+stu_fail = {}
 
+for student, score in students.items():
+    if score >= 80:
+        stu_pass[student] = score
+    else:
+        stu_fail[student] = score
+
+print(f"Students who passed: {stu_pass}")
+print(f"Students who failed: {stu_fail}")
+"""
 
 #------------------------------------------------------------
 # Exercise 2: Inventory Reordering System
