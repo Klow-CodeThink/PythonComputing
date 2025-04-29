@@ -79,11 +79,11 @@ print(f"Items with stock below 15 for reordering: {for_reorder}")
 
 # Task 2: Calculate and print the percentage of total stock for each item.
 
-total_stock = sum(inventory.values())
+total_stock = sum(inventory.values())           # adds up all the stock quantities
 
-for item, stock in inventory.items():
-    percent_item = (stock / total_stock) * 100
-    print(f"{item} : {percent_item:.0f}%")
+for item, stock in inventory.items():           # loops through each item and its individual stock
+    percent_item = (stock / total_stock) * 100  # calculates the percentage that item contributes to the total
+    print(f"{item} : {percent_item:.0f}%")      # prints the item name and its percentage rounded to whole number
 """
 
 #------------------------------------------------------------
