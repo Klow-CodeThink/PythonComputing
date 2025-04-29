@@ -91,14 +91,14 @@ print(f"Updated Inventory: {inventory}")
 # Scenario: A librarian tracks the availability of books in a dictionary.
 
 """
+# Task 1: Add a new book "To Kill a Mockingbird" with 3 copies.
+
+
 books = {
     "1984": {"status": "Available", "copies": 5},
     "Brave New World": {"status": "Checked Out", "copies": 0},
     "Fahrenheit 451": {"status": "Available", "copies": 2},
 }
-
-# Task 1: Add a new book "To Kill a Mockingbird" with 3 copies.
-
 
 books["To Kill a Mockingbird"] = {"status": "Available", "copies": 3}
 
@@ -110,7 +110,7 @@ print(books)
 
 
 if books["1984"]["copies"] == 0:
-    books["1984"]["status"] == "Checked Out"
+    books["1984"]["status"] = "Checked Out"     # check out with print == or =
 
 
 #------------------------------------------------------------
@@ -126,6 +126,7 @@ for book, details in books.items():
 #------------------------------------------------------------
 # In-Class Exercise 4: Customer Orders Tracking
 # Scenario: A store tracks orders with customers and the items they purchased.
+
 """
 # Task 1: Add a new order for "Mark" who purchased "Apples" and "Oranges".
 
@@ -135,7 +136,6 @@ orders = {
     "Mary": ["Oranges", "Grapes"],
     "Alice": ["Bananas", "Pineapples"],
 }
-
 
 orders["Mark"] = ["Apples", "Oranges"]      # "Apples" and "Oranges" --> "Oranges" only
 
@@ -149,11 +149,31 @@ print(orders)
 unique_items = set()
 
 for items in orders.values():
-    for e_item in items:
-        unique_items.add(e_item)
+    unique_items.update(items)
 
 print(f"The total number of unique items is {len(unique_items)}.")
 
+# or
+
+unique_items = set()
+
+for lists in orders.values():
+    for item in lists:
+        unique_items.add(item)
+
+
+print(f"The total number of unique items is {len(unique_items)}.")
+
+# or
+
+unique_items = []
+
+for lists in orders.values():
+    for item in lists:
+        if item not in unique_items:
+            unique_items.append(item)
+
+print(f"The total number of unique items is {len(unique_items)}.")
 
 
 #------------------------------------------------------------
@@ -168,7 +188,6 @@ for customer, items in orders.items():
 
 print(f"Customers who purchased bananas: {cust_buy_bana}")
 """
-
 
 ###########################################################
 
