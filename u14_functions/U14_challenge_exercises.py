@@ -80,11 +80,37 @@ print(cust_msg)
 # Input: Number: 5
 # Output: "Factorial of 5 is 120"
 
+"""
+# amended version
+def generate_fact(num):
+    if num < 0:                                     # Step 3: if number is negative, prints error msg
+        print("Error: Factorial is only defined for non-negative integers.")
+    else:
+        factorial = 1                               # Step 4: if number is 0 or more, calculate the factorial using a for loop
+        for i in range(1, num + 1):                             # factorial starts at 1
+            factorial = factorial * i                           # loops multiplies factorial by i for every i from 1 to num
+    
+        print(f"Factorial of {num} is {factorial}.") # Step 5: after the loop, prints result as an f-string
 
 
+number = int(input("Enter a number: "))             # Step 1: program asks user to input a number / converts to integer
+
+generate_fact(number)                               # Step 2: function 'generate_fact()' is called with that number
 
 
+# improved version
+def generate_fact(num):
+    if num < 0:
+        return "Error: Factorial is only defined for non-negative integers."
+    factorial = 1
+    for i in range(1, num + 1):
+        factorial *= i
+    return factorial                                # returns the result instead of just printing
 
+number = int(input("Enter a number: "))
+result = generate_fact(number)                      # stoes returned factorial into variable 'result'
+print(f"Factorial of {number} is {result}.")
+"""
 
 #------------------------------------------------------------
 # Exercise 4: Find Maximum in a List
@@ -121,10 +147,28 @@ print(f"The maximum number is: {max_value}")
 # Input: "userexample.com"
 # Output: "Invalid email address. Missing '@' or domain."
 
+"""
+def validate_email(email):
+    if "@" not in email or "." not in email:
+        return "Invalid: Missing '@' or '.'"
 
+    at_index = email.index("@")                     # gives the first position of '@'
+    dot_index = email.rfind(".")                    # gives the last position of '.' / use rfind() in case the email has multiple dots
 
+    if at_index == 0:
+        return "Invalid: '@' cannot be the first character"
 
+    elif dot_index < at_index:
+        return "Invalid: '.' must come after '@'"
 
+    elif dot_index == len(email) - 1:
+        return "Invalid: Email cannot end with a '.'"
+    else:
+        return "Valid email address"
 
+user_email = input("Enter your email address: ")
+result = validate_email(user_email)
+print(result)
+"""
 
 ###########################################################
