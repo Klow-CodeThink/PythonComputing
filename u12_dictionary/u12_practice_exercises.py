@@ -53,7 +53,7 @@ print(students)
 
 inventory = {"Apples": 50, "Bananas": 30, "Oranges": 20, "Grapes": 60}
 
-inventory["Pineapple"] = 40
+inventory["Pineapples"] = 40
 
 print(inventory)
 
@@ -120,7 +120,7 @@ if books["1984"]["copies"] == 0:
 print("\nAvailable books:")
 for book, details in books.items():
     if details["status"] == "Available":
-        print(f"{book}: {details['copies']} copies available")
+        print(f"{book}: {details["copies"]} copies available")
 """
 
 #------------------------------------------------------------
